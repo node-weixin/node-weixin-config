@@ -1,6 +1,6 @@
 {
   "name": "node-weixin-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The best module ever.",
   "author": {
     "name": "JSSDKCN",
@@ -10,7 +10,8 @@
   "repository": "JSSDKCN/node-weixin-config",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "keywords": [
     "node-weixin-config",
