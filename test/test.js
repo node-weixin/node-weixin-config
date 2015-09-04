@@ -49,10 +49,14 @@ describe('node-weixin-config tests', function () {
     var merchant = {
       id: 'id',
       key: 'key',
+      pfx: 'sdfsfd',
+      pfxKey: 'sdoosfd'
     };
     nwc.merchant.init(merchant);
     assert.equal(true, nwc.merchant.id === merchant.id);
     assert.equal(true, nwc.merchant.key === merchant.key);
+    assert.equal(true, nwc.merchant.pfx === merchant.pfx);
+    assert.equal(true, nwc.merchant.pfxKEY === merchant.pfxKEY);
   });
 
   it('should not be able to init merchant', function () {
