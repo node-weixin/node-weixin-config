@@ -2,6 +2,8 @@
 
 > Weixin configuration module
 
+用来校验配置信息, 通过调用各配置的init函数来验证参数的合法性。
+
 
 ## Install
 
@@ -61,19 +63,18 @@ var jssdk = {
   pay: 'http://oauth.domain.com/weixin/pay'
 };
 nwc.urls.jssdk.init(jssdk);
-    
-   
+
 ```
 
 
 ## License
 
-MIT © [JSSDKCN](blog.3gcnbeta.com)
+MIT © [node-weixin](blog.3gcnbeta.com)
 
 
 [npm-image]: https://badge.fury.io/js/node-weixin-config.svg
 [npm-url]: https://npmjs.org/package/node-weixin-config
-[travis-image]: https://travis-ci.org/JSSDKCN/node-weixin-config.svg?branch=master
-[travis-url]: https://travis-ci.org/JSSDKCN/node-weixin-config
-[daviddm-image]: https://david-dm.org/JSSDKCN/node-weixin-config.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/JSSDKCN/node-weixin-config
+[travis-image]: https://travis-ci.org/node-weixin/node-weixin-config.svg?branch=master
+[travis-url]: https://travis-ci.org/node-weixin/node-weixin-config
+[daviddm-image]: https://david-dm.org/node-weixin/node-weixin-config.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/node-weixin/node-weixin-config
