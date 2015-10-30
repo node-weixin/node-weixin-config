@@ -1,6 +1,6 @@
 {
   "name": "node-weixin-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The best module ever.",
   "author": {
     "name": "JSSDKCN",
@@ -18,7 +18,7 @@
     ""
   ],
   "dependencies": {
-    "node-form-validator": "^0.1.2"
+    "node-form-validator": "^0.2.0"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
