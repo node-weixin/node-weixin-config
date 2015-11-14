@@ -104,6 +104,29 @@ describe('node-weixin-config tests', function () {
     assert.equal(true, true);
   });
 
+
+  it('should not be able to init buffered certificate', function () {
+    assert.throws(function() {
+      nwc.certificate.initBuffer('sodfosfd', 'sfdsfd');
+    }, function(err) {
+      if(/pfx Not Buffer!/.test(err)) {
+        return true;
+      }
+      return false;
+    });
+  });
+
+  it('should not be able to init buffered certificate', function () {
+    assert.throws(function() {
+      nwc.certificate.initBuffer(new Buffer('safsfd'));
+    }, function(err) {
+      if(/pfxKey Not Valid!/.test(err)) {
+        return true;
+      }
+      return false;
+    });
+  });
+
   it('should be able to init buffered certificate', function () {
     var path = require('path');
     var fs = require('fs');
@@ -111,6 +134,8 @@ describe('node-weixin-config tests', function () {
     nwc.certificate.init(buffer, 'key');
     assert.equal(true, true);
   });
+
+
 
   it('should not be able to init oauth', function () {
     var oauth = {
