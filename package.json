@@ -1,13 +1,13 @@
 {
   "name": "node-weixin-config",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "The best module ever.",
   "author": {
-    "name": "JSSDKCN",
+    "name": "node-weixin",
     "email": "calidion@gmail.com",
     "url": "blog.3gcnbeta.com"
   },
-  "repository": "JSSDKCN/node-weixin-config",
+  "repository": "node-weixin/node-weixin-config",
   "license": "MIT",
   "files": [
     "index.js",
@@ -26,11 +26,14 @@
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-mocha-cli": "^1.12.0",
+    "istanbul": "^0.4.0",
     "jshint-stylish": "^1.0.1",
     "load-grunt-tasks": "^3.1.0",
+    "mocha": "^2.3.3",
     "time-grunt": "^1.1.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   }
 }
