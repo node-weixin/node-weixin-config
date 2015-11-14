@@ -14,8 +14,7 @@
     "lib"
   ],
   "keywords": [
-    "node-weixin-config",
-    ""
+    "node-weixin-config"
   ],
   "dependencies": {
     "node-form-validator": "^0.2.0"
