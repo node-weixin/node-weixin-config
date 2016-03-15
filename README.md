@@ -1,9 +1,8 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coveralls Status][coveralls-image]][coveralls-url]
-
+# node-weixin-config [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Weixin configuration module
 
 微信校验配置模块是
-([node-weixin-api](https://github.com/node-weixin/node-weixin-api) 
+([node-weixin-api](https://github.com/node-weixin/node-weixin-api)
 或者
 [node-weixin-express](https://github.com/node-weixin/node-weixin-express))
 的一个子项目。
@@ -43,10 +42,10 @@
 
  8. [node-weixin-menu](https://github.com/node-weixin/node-weixin-menu)
     微信菜单相关的操作与命令
-    
+
  9. [node-weixin-user](https://github.com/node-weixin/node-weixin-user)
     微信用户API
-    
+
 10. [node-weixin-media](https://github.com/node-weixin/node-weixin-media)
     微信多媒体API
 
@@ -116,10 +115,9 @@ nwc.urls.jssdk.init(jssdk);
 
 ```
 
-
 ## License
 
-MIT © [node-weixin](blog.3gcnbeta.com)
+Apache-2.0 © [calidion](calidion.github.io)
 
 
 [npm-image]: https://badge.fury.io/js/node-weixin-config.svg
@@ -128,5 +126,5 @@ MIT © [node-weixin](blog.3gcnbeta.com)
 [travis-url]: https://travis-ci.org/node-weixin/node-weixin-config
 [daviddm-image]: https://david-dm.org/node-weixin/node-weixin-config.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/node-weixin/node-weixin-config
-[coveralls-image]: https://coveralls.io/repos/node-weixin/node-weixin-config/badge.svg?branch=master&service=github
-[coveralls-url]: https://coveralls.io/github/node-weixin/node-weixin-config?branch=master
+[coveralls-image]: https://coveralls.io/repos/node-weixin/node-weixin-config/badge.svg
+[coveralls-url]: https://coveralls.io/r/node-weixin/node-weixin-config

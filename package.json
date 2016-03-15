@@ -1,38 +1,44 @@
 {
   "name": "node-weixin-config",
-  "version": "0.2.0",
-  "description": "The best module ever.",
+  "version": "0.3.0",
+  "description": "",
+  "homepage": "",
   "author": {
-    "name": "node-weixin",
+    "name": "calidion",
     "email": "calidion@gmail.com",
-    "url": "blog.3gcnbeta.com"
+    "url": "calidion.github.io"
   },
-  "repository": "node-weixin/node-weixin-config",
-  "license": "MIT",
   "files": [
-    "index.js",
     "lib"
   ],
+  "main": "lib/index.js",
   "keywords": [
-    "node-weixin-config"
+    ""
   ],
-  "dependencies": {
-    "node-form-validator": "^0.2.0"
-  },
   "devDependencies": {
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-jshint": "^0.11.0",
-    "grunt-contrib-nodeunit": "^0.4.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-mocha-cli": "^1.12.0",
-    "istanbul": "^0.4.0",
-    "jshint-stylish": "^1.0.1",
-    "load-grunt-tasks": "^3.1.0",
-    "mocha": "^2.3.3",
-    "time-grunt": "^1.1.0"
+    "eslint-config-xo-space": "^0.7.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-coveralls": "^0.1.0"
   },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "repository": "node-weixin/node-weixin-config",
   "scripts": {
-    "test": "grunt",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "node-form-validator": "^0.4.0"
   }
 }
